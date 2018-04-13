@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Functions and Calculators</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Your styles should be called here -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <h1>The Price of a Pack</h1>
+      <h2>Cigarette Smoking in New York City</h2>
+      <h3>By Madeleine Crenshaw and Kyle Kucharski</h3>
+
+      <div class="image-container">
+
+        <img src="img/img1.jpg">
+
+      </div>
+      <p>Earlier this year, Gov. Andrew Cuomo announced that the number of smokers in New York state had reached a new historic low. Still, more than 10% of adults in New York City each for a pack, sometimes spending over $40 a week on cigarettes. “In places
+        like New York City where cigarette prices are among the highest in the nation, smokers adjust in various ways,” says Deepa Prasad of NYC Treats Tobacco, a program funded by the New York State Department of Health Bureau of Tobacco Control. Prasad
+        says some smokers may budget around their habits, switch to cheaper brands or even purchase cigarettes illegally.
+      </p>
+
+      <p>“Bootleggers bring in cigarettes from neighboring states where they are sold at lower prices and sell them on the streets. Smokers may also purchase “loosies”, which are single cigarettes sold illegally out of the package.” <br><br>Smokers may even
+        cross state lines to buy in bulk for a cheaper alternative, while others have a specific spot. For Kat Rolland, a 21-year-old senior at The New School, she prefers to go to Tabaco Prince, a smoke shop on 14th Street that has a flat rate of $9
+        per pack. <br><br> Rolland says she has been smoking since her freshman year of college and buys three to four packs a week depending on stress and social events, such as parties. <br><br>“I generally factor buying cigarettes into my budget, but
+        sometimes buying a pack of cigarettes puts me over what I should be spending,” says Rolland. The convenience of Tabaco Prince lends her to continue her habit. But as long as she can, prefers brand over price.<br><br> “If I were to buy from a place
+        that didn't sell cigarettes that cheaply I still don't think I would care--I'm a die-hard American Spirits smoker,” says Rolland. <br><br> Deepa Prasad of NYC Treats Tobacco says that research shows smokers do want to kick their expensive habit.
+        “Although smokers are not pleased with the high cost of cigarettes, the addictive nature of cigarettes makes it difficult for them to quit so they find a way to purchase cigarettes, whether it is through legal or illegal means,” says Prasad. Rolland
+        says quitting has been a factor, but New York City’s environment makes it hard to kick the habit. <br><br> “It was actually my new year's resolution this past year to quit but here I am, four months in, still smoking,” said Rolland. “I think about
+        quitting all the time, but I have to be honest, it would be extremely hard to quit living in New York City--especially if you're a serial smoker like me.”
+      </p>
+
+      <p>Want to see where you stand in terms of paying for cigarettes? The following calculator will help you estimate how much you spend on cigarettes in one year's time. Enter the following values based on what you personally spend on purchasing cigarettes
+        in one week. You can enter either in number of packs or numbers of cartons.</p>
+
+      <p>Keep in mind that since prices fluctuate, this calculator is only intended to provide an estimation.</p>
+
+      <table>
+
+        <tr>
+          <th>Quantity</th>
+          <th>Cost</th>
+          <th>Cost/Week</th>
+          <th>Cost/Year</th>
+        </tr>
+        <tr class="item" data-tariff-percent="0">
+
+          <td>
+            <input class="qty" type="number" placeholder="Number of Packs" />
+          </td>
+          <td><input class="cost" type="number" placeholder="Cost per Packs" /></td>
+          <td class="pre_total">$<span></span></td>
+          <td class="post_total">$<span></span></td>
+        </tr>
+
+      </table>
+
+
+
+      <div id="post_total" class="total">
+        <p>After five years, you will have spent an estimated $<span></span> on cigarettes.</p>
+
+      </div>
+    </div>
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+  </body>
+
+</html>

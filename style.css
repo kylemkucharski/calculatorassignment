@@ -1,0 +1,109 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+/* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+/* Start your base/mobile styles here */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+td, th {
+  width: 20%;
+  display: inline-block;
+}
+
+input {
+  max-width: 100%;
+  display: block;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  background-color: #930e0e;
+  color: white;
+}
+
+img {
+  display: inline-block;
+  width: 75%;
+  height: 75%;
+}
+
+.image-container {
+  text-align: center;
+}
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+  /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+  td, th {
+    width: auto;
+    display: table-cell;
+  }
+}
+
+@media(min-width: 729px) {
+  /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    margin-left: 25%;
+  }
+  h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+  }
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 25%;
+  }
+  img {
+    display: inline-block;
+    width: 60%;
+    height: 60%;
+  }
+}
